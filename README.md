@@ -1,15 +1,17 @@
 # py-MDNet
 
+原仓库地址：[地址](https://github.com/hyeonseobnam/py-MDNet)
+
 by [Hyeonseob Nam](https://hyeonseobnam.github.io/) and [Bohyung Han](http://cvlab.postech.ac.kr/~bhhan/) at POSTECH
 
-**Update (April, 2019)**
-- Migration to python 3.6 & pyTorch 1.0
+**Update (September, 2020)**
+- Migration to python 3.6 & pyTorch 1.1
 - Efficiency improvement (~5fps)
 - ImagNet-VID pretraining
 - Code refactoring
-
+- modify some bug in Origin code,made them suitable for general graphics cards. For example, my graphics card is RTX 1060, and the tracking results are attached to the result folder
 ## Introduction
-PyTorch implementation of MDNet, which runs at ~5fps with a single CPU core and a single GPU (GTX 1080 Ti).
+PyTorch implementation of MDNet, which runs at ~5fps with a single CPU core and a single GPU (GTX 1060).
 #### [[Project]](http://cvlab.postech.ac.kr/research/mdnet/) [[Paper]](https://arxiv.org/abs/1510.07945) [[Matlab code]](https://github.com/HyeonseobNam/MDNet)
 
 If you're using this code for your research, please cite:
@@ -40,7 +42,9 @@ If you're using this code for your research, please cite:
 
 ### Tracking
 ```bash
- python tracking/run_tracker.py -s DragonBaby [-d (display fig)] [-f (save fig)]
+ python tracking/run_tracker.py -s DragonBaby [-d \(display fig\)] [-f \(save fig\)]
+ or 
+ python tracking/run_tracker.py -s DragonBaby -d -f 
 ```
  - You can provide a sequence configuration in two ways (see tracking/gen_config.py):
    - ```python tracking/run_tracker.py -s [seq name]```
