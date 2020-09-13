@@ -10,6 +10,7 @@ by [Hyeonseob Nam](https://hyeonseobnam.github.io/) and [Bohyung Han](http://cvl
 - ImagNet-VID pretraining
 - Code refactoring
 - modify some bug in Origin code,made them suitable for general graphics cards. For example, my graphics card is RTX 1060, and the tracking results are attached to the result folder
+- add some note in code
 ## Introduction
 PyTorch implementation of MDNet, which runs at ~5fps with a single CPU core and a single GPU (GTX 1060).
 #### [[Project]](http://cvlab.postech.ac.kr/research/mdnet/) [[Paper]](https://arxiv.org/abs/1510.07945) [[Matlab code]](https://github.com/HyeonseobNam/MDNet)
@@ -32,6 +33,12 @@ If you're using this code for your research, please cite:
 <img src="./figs/tb50-precision.png" width="400"> <img src="./figs/tb50-success.png" width="400">
 <img src="./figs/otb2013-precision.png" width="400"> <img src="./figs/otb2013-success.png" width="400">
 
+## 部分跟踪结果如下图所示：
+![](https://github.com/xwr96/py-MDNet/blob/master/results/DragonBaby/figs/0000.jpg)
+
+![](https://github.com/xwr96/py-MDNet/blob/master/results/DragonBaby/figs/0001.jpg)
+
+![](https://github.com/xwr96/py-MDNet/blob/master/results/DragonBaby/figs/0005.jpg)
 ## Prerequisites
 - python 3.6+
 - opencv 3.0+
